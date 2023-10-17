@@ -1,0 +1,43 @@
+#include<stdio.h>
+
+int main()
+
+{
+
+     int num1;
+
+     int num2;
+
+     int temp;
+
+
+
+     printf("Type value of number 1 : ");
+
+     scanf("%d",&num1);
+
+
+
+     printf("\nType value of number 2 : ");
+
+     scanf("%d",&num2);
+
+
+
+     temp = num1;
+
+     num1 = num2;
+
+     num2 = temp;
+
+
+
+     printf("After swapping values \n");
+
+     printf("number 1 : %d",num1);
+
+     printf("\nnumber 2 : %d",num2);
+
+     return 0;
+
+}
