@@ -1,0 +1,39 @@
+#include <stdio.h>
+
+#include <string.h>
+
+
+
+int main()
+
+{
+
+   char str1[1000], str2[1000];
+
+
+
+   printf("Enter the first string\n");
+
+   gets(str1); // Reading first string from user
+
+
+
+   printf("Enter the second string\n");
+
+   gets(str2); // Reading second string from user
+
+
+
+   // strcat is use to Concatenates two strings
+
+   strcat(str1,str2);
+
+
+
+   printf("String obtained on concatenation is:%s\n",str1);
+
+
+
+   return 0;
+
+}
