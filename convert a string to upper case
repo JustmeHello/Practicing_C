@@ -1,0 +1,31 @@
+#include <stdio.h>
+
+#include <string.h>
+
+
+
+int main()
+
+{
+
+   char string[1000];
+
+
+
+   printf("Input a string to convert to lower case\n");
+
+   gets(string);
+
+
+
+   printf("Characters in Uppercase: \"%s\"\n",strupr(string));
+
+
+
+   // strupr is use to convert lower case character to upper case
+
+
+
+   return  0;
+
+}
