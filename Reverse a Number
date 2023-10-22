@@ -1,0 +1,37 @@
+#include < stdio.h >
+
+
+
+    int main() {
+
+    int num, rev = 0;
+
+
+
+    //Reading a number
+
+    printf("Please enter a number: ");
+
+    scanf("%d", & num);
+
+    
+
+    //finding reverse number using while loop
+
+     while (num > 0) {
+
+      rev = rev * 10;
+
+      rev = rev + num % 10;
+
+      num = num / 10;
+
+    }
+
+
+
+    printf("Reversed number is = %d ", rev);
+
+    return 0;
+
+}
