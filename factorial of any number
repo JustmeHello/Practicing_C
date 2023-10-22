@@ -1,0 +1,43 @@
+#include <stdio.h>
+
+
+
+int main()
+
+{
+
+    int num,i;
+
+    long long fact=1;
+
+
+
+    // Reading a number from user
+
+    printf("Enter any number to calculate factorial: ");
+
+    scanf("%d",&num);
+
+    fact = 1;
+
+    i = 1;
+
+
+
+      //Run loop from 1 to number entered by user
+
+    while(i <= num)
+
+    {
+
+        fact = fact * i;
+
+        i++;
+
+    }
+
+     printf("Factorial of %d = %lld", num, fact);
+
+ return 0;
+
+}
