@@ -1,0 +1,43 @@
+#include<stdio.h>
+
+int main()
+
+{
+
+    int base, exponent,power, i;
+
+
+
+    //Reading base & exponent
+
+    printf("Enter base: ");
+
+    scanf("%d",&base);
+
+    printf("Enter exponent: ");
+
+    scanf("%d",&exponent);
+
+
+
+    power = 1;
+
+    i = 1;
+
+    //caculatinh power of given number
+
+    while(i <= exponent)
+
+    {
+
+        power = power * base;
+
+        i++;
+
+    }
+
+    printf("Power : %d", power);
+
+    return 0;
+
+}
