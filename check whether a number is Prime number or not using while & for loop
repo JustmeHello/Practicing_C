@@ -1,0 +1,51 @@
+#include<stdio.h>
+
+int main()
+
+{
+
+    int num, i, f;
+
+
+
+    //Readind a number from user
+
+    printf("Enter any number: ");
+
+    scanf("%d", &num);
+
+
+
+    f = 0;
+
+    i = 2;
+
+    while(i <= num/2)
+
+    {
+
+        if(num%i == 0)
+
+        {
+
+            f=1;
+
+            break;
+
+        }
+
+        i++;
+
+    }
+
+    if(f == 0)
+
+        printf("%d is a Prime Number", num);
+
+    else
+
+        printf("%d is Not a Prime Number", num);
+
+ return 0;
+
+}
