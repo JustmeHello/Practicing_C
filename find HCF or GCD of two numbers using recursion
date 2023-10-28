@@ -1,0 +1,53 @@
+#include <stdio.h>
+
+ 
+
+int Findgcd(int x, int y); // Function declaration
+
+ 
+
+ 
+
+int main()
+
+{
+
+    int num1, num2, hcf;
+
+ 
+
+    // Inputting 2 numbers from user
+
+    printf("Enter any 2 numbers to find HCF or GCD: ");
+
+    scanf("%d%d", &num1, &num2);
+
+ 
+
+    hcf = Findgcd(num1, num2);
+
+ 
+
+    printf("GCD of %d and %d = %d", num1, num2, hcf);
+
+ 
+
+    return 0;
+
+}
+
+ 
+
+int Findgcd(int x, int y)
+
+{
+
+    if(y == 0)
+
+        return x;
+
+    else
+
+        return Findgcd(y, x%y);
+
+}
