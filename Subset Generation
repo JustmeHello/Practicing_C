@@ -1,0 +1,10 @@
+void generateSubsets(char set[], int n, int index, char subset[]) {
+    if (index == n) {
+        subset[index] = '\0';
+        printf("%s\n", subset);
+        return;
+    }
+    subset[index] = set[index];
+    generateSubsets(set, n, index + 1, subset);
+    generateSubsets(set, n, index + 1, subset);
+}
