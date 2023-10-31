@@ -1,0 +1,6 @@
+void printNumbers(int N) {
+    if (N > 0) {
+        printNumbers(N - 1);
+        printf("%d ", N);
+    }
+}
