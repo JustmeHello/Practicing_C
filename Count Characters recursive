@@ -1,0 +1,4 @@
+int countCharOccurrence(char str[], char target, int index) {
+    if (str[index] == '\0') return 0;
+    return (str[index] == target) + countCharOccurrence(str, target, index + 1);
+}
